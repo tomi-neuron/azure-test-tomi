@@ -4,7 +4,8 @@ from fastapi import FastAPI
 app = FastAPI()
 
 def echo(message, history):
-    return message
+
+    return message+"?"
 
 demo = gr.ChatInterface(fn=echo, examples=["hello", "hola", "merhaba"], title="Echo Bot")
 
